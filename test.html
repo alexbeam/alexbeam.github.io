@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<hr>
+<div class="container theme-showcase" id="all">
+<div class="test" id='woody'>
+	<h2>Woody     <span class="btn btn-primary" id='woody-t'></span></h2>
+	<table style="width:100%"id='woody-b'><thead>
+              <tr>
+                <th>POS</th>
+                <th>MOV</th>
+                <th>Player</th>
+                <th>To Par</th>
+		<th>Today</th>
+		<th>Thru</th>
+		<th>R1</th>
+		<th>R2</th>
+		<th>R3</th>
+		<th>R4</th>
+		<th>TOT</th>
+              </tr>
+        </thead></table>
+</div>
+<div class="test" id='max'>
+	<h2>Max     <span class="btn btn-primary" id='max-t'></span></h2>
+	<table style="width:100%"id='max-b'><thead>
+              <tr>
+                <th>POS</th>
+                <th>MOV</th>
+                <th>Player</th>
+                <th>To Par</th>
+		<th>Today</th>
+		<th>Thru</th>
+		<th>R1</th>
+		<th>R2</th>
+		<th>R3</th>
+		<th>R4</th>
+		<th>TOT</th>
+              </tr>
+        </thead></table>
+</div>
+<div class="test" id='beam'>
+	<h2>Beam     <span class="btn btn-primary" id='beam-t'></span></h2>
+	<table style="width:100%"id='beam-b'>
+	<thead>
+              <tr>
+                <th>POS</th>
+                <th>MOV</th>
+                <th>Player</th>
+                <th>To Par</th>
+		<th>Today</th>
+		<th>Thru</th>
+		<th>R1</th>
+		<th>R2</th>
+		<th>R3</th>
+		<th>R4</th>
+		<th>TOT</th>
+              </tr>
+        </thead>	
+	</table>
+</div>
+
+<div class="test" id='marc'>
+	<h2>Marc     <span class="btn btn-primary" id='marc-t'></span></h2>
+	<table style="width:100%"id='marc-b'><thead>
+              <tr>
+                <th>POS</th>
+                <th>MOV</th>
+                <th>Player</th>
+                <th>To Par</th>
+		<th>Today</th>
+		<th>Thru</th>
+		<th>R1</th>
+		<th>R2</th>
+		<th>R3</th>
+		<th>R4</th>
+		<th>TOT</th>
+              </tr>
+        </thead></table>
+</div>
+
+<div class="test" id='jp'>
+	<h2>JP     <span class="btn btn-primary" id='jp-t'></span></h2>
+	<table style="width:100%"id='jp-b'><thead>
+              <tr>
+                <th>POS</th>
+                <th>MOV</th>
+                <th>Player</th>
+                <th>To Par</th>
+		<th>Today</th>
+		<th>Thru</th>
+		<th>R1</th>
+		<th>R2</th>
+		<th>R3</th>
+		<th>R4</th>
+		<th>TOT</th>
+              </tr>
+        </thead></table>
+</div>
+
+<div class="test" id='stan'>
+	<h2>Stanis     <span class="btn btn-primary" id='stan-t'></span></h2>
+	<table style="width:100%"id='stan-b'><thead>
+              <tr>
+                <th>POS</th>
+                <th>MOV</th>
+                <th>Player</th>
+                <th>To Par</th>
+		<th>Today</th>
+		<th>Thru</th>
+		<th>R1</th>
+		<th>R2</th>
+		<th>R3</th>
+		<th>R4</th>
+		<th>TOT</th>
+              </tr>
+        </thead></table>
+	<hr>
+</div>
+
+<div class="test" id='wg'>
+	<h2>Wigs     <span class="btn btn-primary" id='wg-t'></span></h2>
+	<table style="width:100%"id='wg-b'><thead>
+              <tr>
+                <th>POS</th>
+                <th>MOV</th>
+                <th>Player</th>
+                <th>To Par</th>
+		<th>Today</th>
+		<th>Thru</th>
+		<th>R1</th>
+		<th>R2</th>
+		<th>R3</th>
+		<th>R4</th>
+		<th>TOT</th>
+              </tr>
+        </thead></table>
+</div>
+<div class="test" id='deu'>
+	<h2>Deutsch     <span class="btn btn-primary" id='deu-t'></span></h2>
+	<table style="width:100%"id='deu-b'><thead>
+              <tr>
+                <th>POS</th>
+                <th>MOV</th>
+                <th>Player</th>
+                <th>To Par</th>
+		<th>Today</th>
+		<th>Thru</th>
+		<th>R1</th>
+		<th>R2</th>
+		<th>R3</th>
+		<th>R4</th>
+		<th>TOT</th>
+              </tr>
+        </thead></table>
+</div>
+<div class="test" id='jld'>
+	<h2>JLad     <span class="btn btn-primary" id='jld-t'></span></h2>
+	<table style="width:100%"id='jld-b'><thead>
+              <tr>
+                <th>POS</th>
+                <th>MOV</th>
+                <th>Player</th>
+                <th>To Par</th>
+		<th>Today</th>
+		<th>Thru</th>
+		<th>R1</th>
+		<th>R2</th>
+		<th>R3</th>
+		<th>R4</th>
+		<th>TOT</th>
+              </tr>
+        </thead></table>
+</div>
+<div class="test" id='bg'>
+	<h2>BGriff     <span class="btn btn-primary" id='bg-t'></span></h2>
+	<table style="width:100%"id='bg-b'><thead>
+              <tr>
+                <th>POS</th>
+                <th>MOV</th>
+                <th>Player</th>
+                <th>To Par</th>
+		<th>Today</th>
+		<th>Thru</th>
+		<th>R1</th>
+		<th>R2</th>
+		<th>R3</th>
+		<th>R4</th>
+		<th>TOT</th>
+              </tr>
+        </thead></table>
+</div>
+<div class="test" id='rk'>
+	<h2>RKay     <span class="btn btn-primary" id='rk-t'></span></h2>
+	<table style="width:100%"id='rk-b'><thead>
+              <tr>
+                <th>POS</th>
+                <th>MOV</th>
+                <th>Player</th>
+                <th>To Par</th>
+		<th>Today</th>
+		<th>Thru</th>
+		<th>R1</th>
+		<th>R2</th>
+		<th>R3</th>
+		<th>R4</th>
+		<th>TOT</th>
+              </tr>
+        </thead></table>
+</div>
+</div>
+<br><br><br><br><br><br>
+</body>
+<script>
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "http://www.espn.com/golf/leaderboard", true);
+xhr.onreadystatechange = function () {
+    if(xhr.readyState === xhr.DONE && xhr.status === 200) {	
+	var data = xhr.responseText      
+	var tr = $(data).find('tr.player-overview');
+	var beam = 
+	[
+	"Jordan Spieth",
+	"Tyrrell Hatton",
+	"Brooks Koepka",
+	"Soren Kjeldsen",
+	"Webb Simpson"
+	]
+	for (i = 0; i < beam.length; i++) {		
+		if (i == 0){var t = 0}
+		var player = $(data).find("tr.player-overview:contains('"+beam[i]+"')");
+		var total = player.find(".relativeScore").html().toString();
+		if (total == "E") {
+			t += 0; }
+		else {
+			nt = Number(total);
+			t += nt;
+		}
+		$('#beam-b').append(player);
+		$('#beam-t').html("TOTAL = "+t);
+		$('#beam').attr('tot', t);
+	}
+	var marc = [
+	"Jason Day",
+	"Alex Noren",
+	"Zach Johnson",
+	"Rafael Cabrera Bello",
+	"Emiliano Grillo"	
+	]
+	for (i = 0; i < marc.length; i++) {		
+		if (i == 0){var t = 0}		
+		var player = $(data).find("tr.player-overview:contains('"+marc[i]+"')");
+		var total = player.find(".relativeScore").html().toString();
+		if (total == "E") {
+			t += 0; }
+		else {
+			nt = Number(total);
+			t += nt;
+		}	
+		$('#marc-b').append(player);
+		$('#marc-t').html("TOTAL = "+t);
+	}
+	var woody = [
+	"Justin Thomas",
+	"Patrick Reed",
+	"Byeong Hun An",
+	"Gary Woodland",
+	"Bernhard Langer"	
+	]
+	for (i = 0; i < woody.length; i++) {		
+		if (i == 0){var t = 0}		
+		var player = $(data).find("tr.player-overview:contains('"+woody[i]+"')");
+		var total = player.find(".relativeScore").html().toString();
+		if (total == "E") {
+			t += 0; }
+		else {
+			nt = Number(total);
+			t += nt;
+		}
+		$('#woody-b').append(player);
+		$('#woody-t').html("TOTAL = "+t);
+		$('#woody').attr('tot', t);
+	}
+	var jp = [
+	"Phil Mickelson",
+	"Paul Casey",
+	"Lee Westwood",
+	"J.B. Holmes",
+	"Francesco Molinari"
+	]
+	for (i = 0; i < jp.length; i++) {		
+		if (i == 0){var t = 0}		
+		var player = $(data).find("tr.player-overview:contains('"+jp[i]+"')");
+		var total = player.find(".relativeScore").html().toString();
+		if (total == "E") {
+			t += 0; }
+		else {
+			nt = Number(total);
+			t += nt;
+		}	
+		$('#jp-b').append(player);
+		$('#jp-t').html("TOTAL = "+t);
+		$('#jp').attr('tot', t);
+	}
+	var stan = [
+	"Rickie Fowler",
+	"Sergio Garcia",
+	"Bill Haas",
+	"Kevin Kisner",
+	"Tommy Fleetwood",
+	]
+	for (i = 0; i < stan.length; i++) {		
+		if (i == 0){var t = 0}		
+		var player = $(data).find("tr.player-overview:contains('"+stan[i]+"')");
+		var total = player.find(".relativeScore").html().toString();
+		if (total == "E") {
+			t += 0; }
+		else {
+			nt = Number(total);
+			t += nt;
+		}
+		$('#stan-b').append(player);
+		$('#stan-t').html("TOTAL = "+t);
+		$('#stan').attr('tot', t);
+	}
+	var wg = [
+	"Justin Rose",
+	"Brandt Snedeker",
+	"Marc Leishman",
+	"Charley Hoffman",
+	"Jhonattan Vegas"
+	]
+	for (i = 0; i < wg.length; i++) {		
+		if (i == 0){var t = 0}		
+		var player = $(data).find("tr.player-overview:contains('"+wg[i]+"')");
+		var total = player.find(".relativeScore").html().toString();
+		if (total == "E") {
+			t += 0; }
+		else {
+			nt = Number(total);
+			t += nt;
+		}
+		$('#wg-b').append(player);
+		$('#wg-t').html("TOTAL = "+t);
+		$('#wg').attr('tot', t);
+	}
+	var max = [
+	"Hideki Matsuyama",
+	"Matt Kuchar",
+	"Russell Henley",
+	"Charl Schwartzel",
+	"Jason Dufner"
+	]
+	for (i = 0; i < max.length; i++) {		
+		if (i == 0){var t = 0}		
+		var player = $(data).find("tr.player-overview:contains('"+max[i]+"')");
+		var total = player.find(".relativeScore").html().toString();
+		if (total == "E") {
+			t += 0; }
+		else {
+			nt = Number(total);
+			t += nt;
+		}
+		$('#max-b').append(player);
+		$('#max-t').html("TOTAL = "+t);
+		$('#max').attr('tot', t);
+	}
+	var deu = [
+	"Rory McIlroy",
+	"Thomas Pieters",
+	"Matthew Fitzpatrick",
+	"Shane Lowry",
+	"Ryan Moore"
+	]
+	for (i = 0; i < deu.length; i++) {		
+		if (i == 0){var t = 0}		
+		var player = $(data).find("tr.player-overview:contains('"+deu[i]+"')");
+		var total = player.find(".relativeScore").html().toString();
+		if (total == "E") {
+			t += 0; }
+		else {
+			nt = Number(total);
+			t += nt;
+		}
+		$('#deu-b').append(player);
+		$('#deu-t').html("TOTAL = "+t);
+		$('#deu').attr('tot', t);
+	}
+	var jld = [
+	"Dustin Johnson",
+	"Adam Scott",
+	"Jimmy Walker",
+	"Kevin Na",
+	"Martin Kaymer"
+	]
+	for (i = 0; i < jld.length; i++) {		
+		if (i == 0){var t = 0}		
+		var player = $(data).find("tr.player-overview:contains('"+jld[i]+"')");
+		var total = player.find(".relativeScore").html().toString();
+		if (total == "E") {
+			t += 0; }
+		else {
+			nt = Number(total);
+			t += nt;
+		}
+		$('#jld-b').append(player);
+		$('#jld-t').html("TOTAL = "+t);
+		$('#jld').attr('tot', t);
+	}
+	var bg = [
+	"Bubba Watson",
+	"Henrik Stenson",
+	"Daniel Berger",
+	"Adam Hadwin",
+	"Jim Furyk"
+	]
+	for (i = 0; i < jld.length; i++) {		
+		if (i == 0){var t = 0}		
+		var player = $(data).find("tr.player-overview:contains('"+bg[i]+"')");
+		var total = player.find(".relativeScore").html().toString();
+		if (total == "E") {
+			t += 0; }
+		else {
+			nt = Number(total);
+			t += nt;
+		}
+		$('#bg-b').append(player);
+		$('#bg-t').html("TOTAL = "+t);
+		$('#bg').attr('tot', t);
+	}
+	var rk = [
+	"Jon Rahm",
+	"Louis Oosthuizen",
+	"Branden Grace",
+	"Danny Willet",
+	"Angel Cabrera"
+	]
+	for (i = 0; i < rk.length; i++) {		
+		if (i == 0){var t = 0}		
+		var player = $(data).find("tr.player-overview:contains('"+rk[i]+"')");
+		var total = player.find(".relativeScore").html().toString();
+		if (total == "E") {
+			t += 0; }
+		else {
+			nt = Number(total);
+			t += nt;
+		}
+		$('#rk-b').append(player);
+		$('#rk-t').html("TOTAL = "+t);
+		$('#rk').attr('tot', t);
+	}
+
+    }
+  };
+xhr.send();
+</script>
+<script>
+$( document ).ready(function() {
+	console.log( "ready!" );
+	setTimeout(function(){
+	var $wrapper = $('#all');
+	var tes = $wrapper.find('.test')
+	console.log(tes);
+	$wrapper.find('.test').sort(function(a, b) {
+	    return +a.dataset.tot - +b.dataset.tot;
+	})
+	.appendTo($wrapper);
+	}, 10000);
+});
+</script>
+</html>

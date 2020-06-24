@@ -35,11 +35,11 @@ Start Menu &gt; search "Manage BitLocker" &gt; Turn on BitLocker
 
 Select the default options and allow the computer to restart
 
-![](.gitbook/assets/bitlocker2.png){:height="60%" width="60%"}
+![](.gitbook/assets/bitlocker2.png)
 
 BitLocker is now enabled.
 
-![](.gitbook/assets/image%20%282%29.png){:height="60%" width="60%"}
+![](.gitbook/assets/image%20%282%29.png)
 
 ### Enable Secure Boot
 

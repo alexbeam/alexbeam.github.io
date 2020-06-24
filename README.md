@@ -6,15 +6,11 @@ In some offices, the Laptop provided to testers already has stock Windows 10 ins
 
 Reach out to your Lab Manager if you need a Windows 10 installation ISO or product key. Some Lab Managers may have a Windows 10 installer USB you can borrow. 
 
-{% hint style="info" %}
-For the purposes of this guide we are using the Windows 10 Enterprise Evaluation image: [https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise)
-{% endhint %}
+> For the purposes of this guide we are using the Windows 10 Enterprise Evaluation image: [https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise)
 
 Once you have installed the ISO to a USB drive, shut down the target device and boot it while pressing F1, F12, or F10 to enter the boot menu and select the USB device for boot.
 
-{% hint style="info" %}
-Lenovo ThinkPad users press enter when the Lenovo logo appears and then F12
-{% endhint %}
+> Lenovo ThinkPad users press enter when the Lenovo logo appears and then F12
 
 The following installation steps are recommended:
 
@@ -121,9 +117,7 @@ Select **Rename this PC**. ****Select a new hostname.
 
 ## Installing Programs
 
-{% hint style="info" %}
-Testers are not required to follow these methods or install any of this software. These are recommendations.
-{% endhint %}
+> Testers are not required to follow these methods or install any of this software. These are recommendations.
 
 ### Ninite
 
@@ -183,9 +177,7 @@ Save the file and restart Windows Terminal. You should have a fully functional L
 
 Install any other programs you may need. From within WSL you can pull down Github repositories to your Windows file system using `git clone ...`. We recommend putting all of your tools within a single Windows directory and create a Windows Defender exception on that directory so that they can be run without causing security issues.
 
-{% hint style="info" %}
-Please use Windows Defender exceptions at your own risk
-{% endhint %}
+> Please use Windows Defender exceptions at your own risk
 
 Start Menu &gt; search "Virus & Threat Protection" &gt; Enter
 
@@ -199,9 +191,7 @@ After this this exclusion has been created, you can download tools to this path 
 
 ![](.gitbook/assets/2020-06-17-15_48_46-microsoft-edge.png)
 
-{% hint style="info" %}
-Once again, use AV exclusions with caution.
-{% endhint %}
+> Once again, use AV exclusions with caution.
 
 #### Hashcat
 
@@ -233,9 +223,7 @@ Once installed you will need to find a VM image for Kali Linux from the Offensiv
 
 These can only be downloaded via Torrent clients like uTorrent.
 
-{% hint style="info" %}
-You do not have to use Kali Linux for testing. Testers are given the freedom to use any distro they prefer, such as Ubuntu or Debian.
-{% endhint %}
+> You do not have to use Kali Linux for testing. Testers are given the freedom to use any distro they prefer, such as Ubuntu or Debian.
 
 Once downloaded, open Virtual Box and select **Import &gt;** **File Folder Icon &gt; Your** .**ova File for Kali Linux:**
 

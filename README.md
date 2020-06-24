@@ -63,8 +63,6 @@ Click the **Advanced** button to open the Advanced TCP/IP Settings window. Then 
 
 Repeat this process for all other relevant network adapters such as **WIFI**. Note: there are ways that this can be performed via command line or registry options.
 
-[https://www.cyber.gov.au/publications/hardening-microsoft-windows-10-version-1709-workstations](https://www.cyber.gov.au/publications/hardening-microsoft-windows-10-version-1709-workstations)
-
 ### Removing Preinstalled Programs
 
 #### Powershell

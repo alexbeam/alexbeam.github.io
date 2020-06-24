@@ -4,7 +4,7 @@
 
 In some offices, the Laptop provided to testers already has stock Windows 10 installed. If your device already boots up to a Windows installation menu, you can skip this step.
 
-Reach out to your Lab Manager if you need a Windows 10 installation ISO or product key. Some Lab Managers may have a Windows 10 installer USB you can borrow. 
+Reach out to your Lab Manager if you need a Windows 10 installation ISO or product key. Some Lab Managers may have a Windows 10 installer USB you can borrow.
 
 > For the purposes of this guide we are using the Windows 10 Enterprise Evaluation image: [https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise)
 
@@ -43,7 +43,7 @@ BitLocker is now enabled.
 
 ### Enable Secure Boot
 
-On Lenovo ThinkPads you can enter the BIOS by pressing enter on boot when the Lenovo logo appears and then F1. Then go to **Security** &gt; **Secure Boot** &gt; **Secure Boot Enabled.** 
+On Lenovo ThinkPads you can enter the BIOS by pressing enter on boot when the Lenovo logo appears and then F1. Then go to **Security** &gt; **Secure Boot** &gt; **Secure Boot Enabled.**
 
 ![](.gitbook/assets/img_3505%20%281%29.jpg)
 
@@ -97,7 +97,7 @@ Get-AppxPackage *bingsports* | Remove-AppxPackage
 Get-AppxPackage *xboxapp* | Remove-AppxPackage
 ```
 
-#### Windows Apps & Features 
+#### Windows Apps & Features
 
 Start menu &gt; search "Add or remove programs" &gt; Enter
 
@@ -111,7 +111,7 @@ Start Menu &gt; search "About your PC" &gt; Enter
 
 ![](.gitbook/assets/2020-06-17-15_53_32-settings.png)
 
-Select **Rename this PC**. ****Select a new hostname.
+Select **Rename this PC**. _\*\*_Select a new hostname.
 
 ## Installing Programs
 
@@ -121,7 +121,7 @@ Select **Rename this PC**. ****Select a new hostname.
 
 Ninite is a great tool for installing many programs at once.
 
-{% embed url="https://ninite.com/" %}
+{% embed url="https://ninite.com/" caption="" %}
 
 Select the programs you would like to install and select **Get Your Ninite**:
 
@@ -157,11 +157,11 @@ After installing the package through the Windows store, restart your computer an
 
 ![](.gitbook/assets/wsl-install.png)
 
-###  Windows Terminal
+### Windows Terminal
 
 Windows terminal makes using WSL prettier and feel more like Linux. It is also installed from the Microsoft store: [https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701)
 
-Install it and run it. If you want to make WSL your default terminal, press `Ctrl+,` \(comma\) and then change the GUID of the default profile to the GUID of the Ubunutu shell in the _profiles_ portion of the settings. 
+Install it and run it. If you want to make WSL your default terminal, press `Ctrl+,` \(comma\) and then change the GUID of the default profile to the GUID of the Ubunutu shell in the _profiles_ portion of the settings.
 
 ![Copy GUID of WSL](.gitbook/assets/guid%20%281%29.png)
 
@@ -227,15 +227,15 @@ Once downloaded, open Virtual Box and select **Import &gt;** **File Folder Icon 
 
 ![](.gitbook/assets/image.png)
 
-The appliance can be imported with the default settings. 
+The appliance can be imported with the default settings.
 
 #### RAM and Processors
 
-Dedicated RAM and processor resources can be changed later. We recommend giving your VM at least 4GB of RAM for the best performance. This can be done by right clicking on the VM and selecting **Settings &gt; System &gt; Motherboard &gt; Base Memory.** 
+Dedicated RAM and processor resources can be changed later. We recommend giving your VM at least 4GB of RAM for the best performance. This can be done by right clicking on the VM and selecting **Settings &gt; System &gt; Motherboard &gt; Base Memory.**
 
 ![](.gitbook/assets/image%20%2816%29.png)
 
-Processor cores can also be selected in this menu under **Processor.** 
+Processor cores can also be selected in this menu under **Processor.**
 
 **Networking**
 
@@ -243,7 +243,7 @@ Still within Settings, the **Network** tab is important for setting the network 
 
 ![](.gitbook/assets/image%20%281%29.png)
 
- If you are testing on an internal network, **Bridge Adapter** is usually the best choice as it will allow you to open ports on your VM host without having to forward them through the Windows host system. You will need to select the network adapter you would like to bridge to \(Wifi, Ethernet, TAP, etc\). Keep in mind, with a Bridged connection, your laptop will take up two IP addresses on the network, one for the Windows host and another for the VM client.
+If you are testing on an internal network, **Bridge Adapter** is usually the best choice as it will allow you to open ports on your VM host without having to forward them through the Windows host system. You will need to select the network adapter you would like to bridge to \(Wifi, Ethernet, TAP, etc\). Keep in mind, with a Bridged connection, your laptop will take up two IP addresses on the network, one for the Windows host and another for the VM client.
 
 Upon starting the VM, you may want to select **View** &gt; **Full screen mode.** To exit the VM and return your mouse the the host Windows system, press the **Right Ctrl** button. \(Kali 2020 has default credentials of kali/kali\). Now you should have a working testing VM that you can customize as you see fit.
 
@@ -259,7 +259,7 @@ reboot
 
 #### Shared Folders
 
-Shared folders are extremely useful on testing engagements because they don't require your testing VM to be running to access client files on the Windows host. For example, you can setup a folder such as `C:\Users\rsm\client\`  that is shared between both the Windows host and the VM. Add a new Machine Folder in the VirtualBox settings:
+Shared folders are extremely useful on testing engagements because they don't require your testing VM to be running to access client files on the Windows host. For example, you can setup a folder such as `C:\Users\rsm\client\` that is shared between both the Windows host and the VM. Add a new Machine Folder in the VirtualBox settings:
 
 ![](.gitbook/assets/image%20%284%29.png)
 
@@ -279,7 +279,13 @@ The files/folders created in this shared directory will be accessible on Windows
 
 ### VMWare
 
-TBD
+Some testers prefer to use VMWare Workstation Pro as their VM hosting software. 
+
+> This software is not free as it costs $250. If you wish to use VMWare please reach out to your Lab Manager for details on expensing the purchase.
+
+After purchasing and installing VMWare Workstation, you will need to restart your computer.
+
+
 
 ### RSM Private Github
 
@@ -295,7 +301,7 @@ Copy the contents of your public key \(id\_rsa.pub\):
 
 ![](.gitbook/assets/image%20%2815%29.png)
 
- And then paste it in Github for your newly added SSH Key:
+And then paste it in Github for your newly added SSH Key:
 
 ![](.gitbook/assets/image%20%2824%29.png)
 
@@ -304,12 +310,4 @@ Add the SSH key and you should be all set. When cloning a repository make sure y
 ![](.gitbook/assets/image%20%2826%29.png)
 
 ![](.gitbook/assets/image%20%2821%29.png)
-
-
-
-
-
-
-
-
 

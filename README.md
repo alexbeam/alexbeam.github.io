@@ -39,8 +39,6 @@ Select the default options and allow the computer to restart
 
 BitLocker is now enabled.
 
-![](.gitbook/assets/image%20%282%29.png)
-
 ### Enable Secure Boot
 
 On Lenovo ThinkPads you can enter the BIOS by pressing enter on boot when the Lenovo logo appears and then F1. Then go to **Security** &gt; **Secure Boot** &gt; **Secure Boot Enabled.**
@@ -213,6 +211,8 @@ This application is simply a wrapper for hashcat.exe and will spawn a cmd window
 
 ### VirtualBox
 
+> VirtualBox is free and recommended for new testers. For more advanced VM management, consider VMware Workstation Pro in the next section.
+
 First you will need to download the latest version of Oracle VM VirtualBox from [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads).
 
 Once installed you will need to find a VM image for Kali Linux from the Offensive Security official releases: [https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/](https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/)
@@ -277,13 +277,13 @@ sudo mount -t vboxsf client /home/kali/client
 
 The files/folders created in this shared directory will be accessible on Windows, even when the VM is powered off. Tip: script out the mount command so it can be easily run or automatically on login.
 
-### VMWare
+### VMware
 
-Some testers prefer to use VMWare Workstation Pro as their VM hosting software. 
+Some testers prefer to use VMware Workstation Pro as their VM hosting software. 
 
-> This software is not free as it costs $250. If you wish to use VMWare please reach out to your Lab Manager or Testing CA for details on expensing the purchase.
+> This software costs $250. If you wish to use VMware please reach out to your Lab Manager or Testing CA for details on expensing this purchase.
 
-After purchasing and installing VMWare Workstation, you will need to restart your computer.
+After purchasing and installing VMware Workstation, you will need to restart your computer.
 
 Once installed you will need to find a VM image for Kali Linux from the Offensive Security official releases: [https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/](https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/)
 
@@ -293,7 +293,7 @@ These can only be downloaded via Torrent clients like uTorrent.
 
 > You do not have to use Kali Linux for testing. Testers are given the freedom to use any distro they prefer, such as Ubuntu or Debian.
 
-Once downloaded, open VMWare and select **Open a Virtual Machine** to open the downloaded Kali Linux VMWare file.
+Once downloaded, open VMware and select **Open a Virtual Machine** to open the downloaded Kali Linux VMware file.
 
 #### Virtual Machine Settings
 
@@ -330,7 +330,7 @@ sudo vmhgfs-fuse -o allow_other -o auto_unmount .host:/Client /home/kali/client
 
 ![](.gitbook/assets/image%20%2829%29.png)
 
-Keep in mind that the vmhgfs-fuse command will need to run manually each time you login unless it is scripted.
+Keep in mind that the vmhgfs-fuse command will need to run manually each time you login unless it is scripted. For more advanced usage, see: [https://www.kali.org/docs/virtualization/install-vmware-tools-kali-guest/](https://www.kali.org/docs/virtualization/install-vmware-tools-kali-guest/)
 
 ### RSM Private Github
 

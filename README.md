@@ -243,7 +243,7 @@ Still within Settings, the **Network** tab is important for setting the network 
 
 ![](.gitbook/assets/image%20%281%29.png)
 
-If you are testing on an internal network, **Bridge Adapter** is usually the best choice as it will allow you to open ports on your VM host without having to forward them through the Windows host system. You will need to select the network adapter you would like to bridge to \(Wifi, Ethernet, TAP, etc\). Keep in mind, with a Bridged connection, your laptop will take up two IP addresses on the network, one for the Windows host and another for the VM client.
+> If you are testing on an internal network, **Bridge Adapter** is usually the best choice as it will allow you to open ports on your VM host without having to forward them through the Windows host system. You will need to select the network adapter you would like to bridge to \(Wifi, Ethernet, TAP, etc\). Keep in mind, with a Bridged connection, your laptop will take up two IP addresses on the network, one for the Windows host and another for the VM client.
 
 Upon starting the VM, you may want to select **View** &gt; **Full screen mode.** To exit the VM and return your mouse the the host Windows system, press the **Right Ctrl** button. \(Kali 2020 has default credentials of kali/kali\). Now you should have a working testing VM that you can customize as you see fit.
 
@@ -281,11 +281,56 @@ The files/folders created in this shared directory will be accessible on Windows
 
 Some testers prefer to use VMWare Workstation Pro as their VM hosting software. 
 
-> This software is not free as it costs $250. If you wish to use VMWare please reach out to your Lab Manager for details on expensing the purchase.
+> This software is not free as it costs $250. If you wish to use VMWare please reach out to your Lab Manager or Testing CA for details on expensing the purchase.
 
 After purchasing and installing VMWare Workstation, you will need to restart your computer.
 
+Once installed you will need to find a VM image for Kali Linux from the Offensive Security official releases: [https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/](https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/)
 
+![](.gitbook/assets/image%20%2828%29.png)
+
+These can only be downloaded via Torrent clients like uTorrent.
+
+> You do not have to use Kali Linux for testing. Testers are given the freedom to use any distro they prefer, such as Ubuntu or Debian.
+
+Once downloaded, open VMWare and select **Open a Virtual Machine** to open the downloaded Kali Linux VMWare file.
+
+#### Virtual Machine Settings
+
+Once added, you can edit the VMs configuration by selecting **Edit virtual machine settings**
+
+#### RAM and Processors
+
+Dedicated RAM and processor resources can be changed later. We recommend giving your VM at least 4GB of RAM for the best performance. This can be modified using **Memory** and **Processors.**
+
+![](.gitbook/assets/image%20%2831%29.png)
+
+#### **Networking**
+
+**Network** **Adapter** is important for setting the network configuration of the VM. If you are working remotely and need to use a VPN hosted by your Windows host, NAT will be needed to use the tunneling interface.
+
+> If you are testing on an internal network, **Bridge Adapter** is usually the best choice as it will allow you to open ports on your VM host without having to forward them through the Windows host system. You will need to select the network adapter you would like to bridge to \(Wifi, Ethernet, TAP, etc\). Keep in mind, with a Bridged connection, your laptop will take up two IP addresses on the network, one for the Windows host and another for the VM client.
+
+#### Shared Folders
+
+Select **Options &gt; Shared Folders &gt; Add...**
+
+![](.gitbook/assets/image%20%2830%29.png)
+
+Next you simply select the path to the folder on your host system that you would like to share:
+
+![](.gitbook/assets/image%20%2827%29.png)
+
+Next you will need to start your Kali VM and make a mount point for your shared folder such as `mkdir /home/kali/client`. Then the simplest way to mount the folder is to run the following command:
+
+```bash
+#sudo vmhgfs-fuse -o allow_other -o auto_unmount .host:/<host folder> <mount point>
+sudo vmhgfs-fuse -o allow_other -o auto_unmount .host:/Client /home/kali/client
+```
+
+![](.gitbook/assets/image%20%2829%29.png)
+
+Keep in mind that the vmhgfs-fuse command will need to run manually each time you login unless it is scripted.
 
 ### RSM Private Github
 

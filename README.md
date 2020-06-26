@@ -117,9 +117,7 @@ Select **Rename this PC**. _\*\*_Select a new hostname.
 
 ### Ninite
 
-Ninite is a great tool for installing many programs at once.
-
-{% embed url="https://ninite.com/" caption="" %}
+Ninite is a great tool for installing many programs at once: [https://ninite.com/](https://ninite.com/)
 
 Select the programs you would like to install and select **Get Your Ninite**:
 

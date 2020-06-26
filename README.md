@@ -328,7 +328,7 @@ sudo vmhgfs-fuse -o allow_other -o auto_unmount .host:/Client /home/kali/client
 
 ![](.gitbook/assets/image%20%2829%29.png)
 
-Keep in mind that the vmhgfs-fuse command will need to run manually each time you login unless it is scripted. For more advanced usage, see: [https://www.kali.org/docs/virtualization/install-vmware-tools-kali-guest/](https://www.kali.org/docs/virtualization/install-vmware-tools-kali-guest/)
+Keep in mind that the `vmhgfs-fuse` command will need to run manually each time you login unless it is scripted. For more advanced usage, see: [https://www.kali.org/docs/virtualization/install-vmware-tools-kali-guest/](https://www.kali.org/docs/virtualization/install-vmware-tools-kali-guest/)
 
 ### RSM Private Github
 
